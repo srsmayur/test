@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>Admin Panel</title>
+        <link href="home.css" rel="stylesheet">
+        <script type="text/javascript" src="../js/v1.0.0-ALPHA/inline-edit.js"></script>                
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+        <script type="text/javascript">
+			function simpleRowDataParser(rowData) {
+				var str = "";
+				for (var key in rowData) {
+ 					if (rowData.hasOwnProperty(key))
+    					str += key + ":" + rowData[key] + "\n";
+				}
+				return str;
+			}
+			function defaultSampleCallback(rowData, rowName) {
+				alert(rowName+"\n"+simpleRowDataParser(rowData));
+			}
+			function selectCallback(rowData, rowName) {
+				var colors = ["FF","CC","99","66","33","00"];
+				document.getElementById(rowName).children[3].style.backgroundColor = "#"+colors[rowData.red]+colors[rowData.green]+colors[rowData.blue];
+			}
+			
+			var defaultSampleOptions = {"finishCallback": defaultSampleCallback};
+			var customFunctionsOptions = {"updateCell": inlineDefaultUpdateCell,
+										"finish": inlineDefaultFinish,
+										"finishCallback": defaultSampleCallback,
+										"finishCell": inlineDefaultFinishCell};
+			var sampleOptions = {"finishCallback": selectCallback};
+		</script>
+    </head>
+    <body>
+    <div class="wrapper">
+      <div class="header">
+            <div class="container">
+		
+                    <a href="home.html" class="navbar-brand">My Admin</a>
+                        <ul class="nav navbar-nav navbar-right">	            
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="logout.php">About</a></li>
+                        <li><a href="logout.php">Log Out</a></li>
+                        
+                        </ul>
+                </div>
+      </div>  
+      <div class="col-lg-2">
+            <ul class="navbar navbar-default nav">
+                    <li><a href="data_view.html"><i class="glyphicon glyphicon-dashboard"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-plus"></i> AddData</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list"></i> Posts</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-tasks"></i> Categories</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-comment"></i> Comments</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-user"></i> Profiles</a></li>
+                    
+                </ul>
+      </div>
+     <div class="container">
+         <h2>People Details</h2>
+        <table class="table table-striped">
+            <thead>
+            <center>
+                <th></th>
+			    <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </center>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="delet" value=""></td>
+                    <td>Mayur</td>
+                    <td>Talsania</td>
+                    <td>24</td>
+                    <td>Talala</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="delet" value=""></td>
+                    <td>Ankit</td>
+                    <td>Aptel</td>
+                    <td>32</td>
+                    <td>Vapi</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="delet" value=""></td>
+                    <td>Johan</td>
+                    <td>Jina</td>
+                    <td>32</td>
+                    <td>Ahmedabad</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="delet" value=""></td>
+                    <td>Johan</td>
+                    <td>Jina</td>
+                    <td>32</td>
+                    <td>Ahmedabad</td>
+                </tr>
+                <tr>
+                        <td><input type="checkbox" name="delet" value=""></td>
+                        <td>Johan</td>
+                        <td>Jina</td>
+                        <td>32</td>
+                        <td>Ahmedabad</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="delet" value=""></td>
+                        <td>Johan</td>
+                        <td>Jina</td>
+                        <td>32</td>
+                        <td>Ahmedabad</td>
+                    </tr>
+                    <tr>
+                            <td><input type="checkbox" name="delet" value=""></td>
+                            <td>Johan</td>
+                            <td>Jina</td>
+                            <td>32</td>
+                            <td>Ahmedabad</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="delet" value=""></td>
+                            <td>Johan</td>
+                            <td>Jina</td>
+                            <td>32</td>
+                            <td>Ahmedabad</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="delet" value=""></td>
+                            <td>Johan</td>
+                            <td>Jina</td>
+                            <td>32</td>
+                            <td>Ahmedabad</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="delet" value=""></td>
+                            <td>Johan</td>
+                            <td>Jina</td>
+                            <td>32</td>
+                        <td>Ahmedabad</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="delet" value=""></td>
+                            <td>Johan</td>
+                            <td>Jina</td>
+                            <td>32</td>
+                            <td>Ahmedabad</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="delet" value=""></td>
+                            <td>Johan</td>
+                            <td>Jina</td>
+                            <td>32</td>
+                            <td>Ahmedabad</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="delet" value=""></td>
+                            <td>Johan</td>
+                            <td>Jina</td>
+                            <td>32</td>
+                            <td>Ahmedabad</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="delet" value=""></td>
+                            <td>Johan</td>
+                            <td>Jina</td>
+                            <td>32</td>
+                            <td>Ahmedabad</td>
+                        </tr>
+
+            </tbody>
+        </table>
+     </div>
+    <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+    </div>
+    </div>
+    </body>
+</html>

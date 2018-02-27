@@ -1,0 +1,31 @@
+.header{
+	background-color: black;
+}
+.header .nav.navbar-nav{ 
+	padding-top: 10px;
+	padding-bottom: 5px;
+	background: url(../img/menu-bg.png) center top repeat-x;
+	font-family: "franklin";
+	padding-left: 32px;
+}
+.header .nav.navbar-nav > li{ }
+.header .nav.navbar-nav li  a{
+ 	color: #fff ;
+	font-size: 18px;
+	padding-right: 8px;
+	padding-left: 0;
+}
+.header .nav.navbar-nav a:hover{
+    color: #ff6467;
+	background: none;
+}
+.header .nav.navbar-nav > li > a:after { 
+	content: "|";
+	padding-left: 10px;
+}
+.header .nav.navbar-nav > li:last-child > a:after { 
+	content: "";
+}
+.header .nav.navbar-nav > li:last-child > a { 
+	padding-right: 15px;
+}
